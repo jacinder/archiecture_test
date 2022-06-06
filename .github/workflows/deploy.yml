@@ -30,7 +30,7 @@ jobs:
         uses: actions/checkout@v2
     
       - name: tar 생성
-        run: tar cvf dist.tar /dist
+        run: tar cvf dist.tar ./*
         shell: bash
         
       - name: AWS 설정
