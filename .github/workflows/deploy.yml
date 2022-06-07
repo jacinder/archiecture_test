@@ -44,4 +44,4 @@ jobs:
         run: aws s3 cp ./dist.tar s3://lge-s3bucket/
  
       - name: Code Deploy
-        run: aws deploy create-deployment --application-name 	lge-codedeploy --deployment-group-name lge-dg --s3-location bucket=lge-s3bucket,bundleType=tar,key=dist.tar
+        run: aws deploy create-deployment --application-name 	lge-codedeploy --deployment-group-name lge-dg --s3-location eu-west-3 bucket=lge-s3bucket,bundleType=tar,key=dist.tar
